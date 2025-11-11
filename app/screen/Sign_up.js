@@ -37,7 +37,7 @@ export default function Sign_up({ navigation }) {
           <View
             style={{ flexDirection: "row", justifyContent: "space-evenly" }}
           >
-            <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+            <TouchableOpacity onPress={() => navigation.navigate("LoginScreen")}>
               <Text style={styles.Textstyle}>Sign In</Text>
             </TouchableOpacity>
             <View>

@@ -1,23 +1,35 @@
-// src/screens/SplashScreen.js
-import React, { useEffect } from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { useEffect } from "react";
+import { ImageBackground, StyleSheet, View } from "react-native";
+import Background from "../components/Background";
 
-export default function SplashScreen({ navigation }) {
+const SplashScreen = ({ navigation }) => {
   useEffect(() => {
-    const timer = setTimeout(() => navigation.replace("LoginScreen"), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
+    setTimeout(() => {
+      navigation.navigate("LoginScreen");
+    }, 3000);
+  });
   return (
-    <View style={styles.container}>
-      <Image source={require("../../assets/icloudEMS_logo.png")} style={styles.logo} />
-      <Text style={styles.title}>Keycloak QR Login App</Text>
-    </View>
+    <Background>
+      <View style={styles.container}>
+        <ImageBackground
+         source={require("../../assets/coffeelogo.jpeg")}
+          style={styles.image}
+        ></ImageBackground>
+      </View>
+    </Background>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#fff" },
-  logo: { width: 120, height: 120, marginBottom: 20 },
-  title: { fontSize: 22, fontWeight: "bold" },
+  container: {
+    flex: 1,
+    flexDirection: "column",
+  },
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center",
+  },
 });
+
+export default SplashScreen;

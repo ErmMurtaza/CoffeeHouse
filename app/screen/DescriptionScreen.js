@@ -11,7 +11,7 @@ export default function DescriptionScreen({navigation}) {
       <View style={styles.header}>
         <View style={styles.headercontainer}>
           <View style={styles.headerCircle}>
-            <Icon name="arrowleft" color="#fff" />
+            <Icon name="arrow-left" color="#fff" />
           </View>
           <View style={styles.headerCircle}>
             <Icon name="heart" color="#fff" />
@@ -83,9 +83,9 @@ export default function DescriptionScreen({navigation}) {
               ]}
             >
               <View style={[styles.headerCircle, { borderColor: "#000" }]}>
-                <Icon name="shoppingcart" color="#000" size={25} />
+                <Icon name="shopping-cart" color="#000" size={25} />
               </View>
-              <TouchableOpacity style={styles.buynow} onPress={() => navigation.navigate("ProfileScreen")}>
+              <TouchableOpacity style={styles.buynow}>
                 <Text
                   style={{ fontSize: 20, fontWeight: "bold", color: "#fff" }}
                 >

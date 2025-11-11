@@ -4,9 +4,7 @@ import SplashScreen from "../screen/SplashScreen";
 import LoginScreen from "../screen/LoginScreen";
 import Sign_up from "../screen/Sign_up";
 import DescriptionScreen from "../screen/DescriptionScreen";
-import ProfileScreen from "../screen/ProfileScreen";
-import EducationScreen from "../screen/EducationScreen";
-import Experience from "../screen/Experience";
+
 
 const Stack = createStackNavigator();
 
@@ -38,21 +36,7 @@ export default StackNavigatoion = () => {
         component={DescriptionScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
-        name="ProfileScreen"
-        component={ProfileScreen}
-        options={{ headerShown: false }}
-      />
-       <Stack.Screen
-        name="EducationScreen"
-        component={EducationScreen}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="Experience"
-        component={Experience}
-        options={{ headerShown: false }}
-      />
+      
     </Stack.Navigator>
   );
 };
