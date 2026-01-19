@@ -3,9 +3,7 @@ A beautifully designed React Native app for coffee lovers — browse, order, and
 
 ## Screenshots
 
-![Home Screen](assets/screenshots/home.jpg)
-![Description Screen](assets/screenshots/description.jpg)
-![Cart Screen](assets/screenshots/cart.jpg)
+![All Screen](assets/screenshots/scrnshot.jpg)
 
 ## Features
 - Browse coffee categories & popular drinks
