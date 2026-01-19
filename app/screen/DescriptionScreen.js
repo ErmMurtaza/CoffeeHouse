@@ -1,11 +1,17 @@
-import { ScrollView, StyleSheet, Text, View ,TouchableOpacity} from "react-native";
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 import Background from "../components/Background";
 import { Avatar } from "react-native-paper";
 import Icon from "react-native-vector-icons/AntDesign";
 import CategoryCard from "../components/CategoryCard";
 
-export default function DescriptionScreen({navigation}) {
+export default function DescriptionScreen({ navigation }) {
   return (
     <Background>
       <View style={styles.header}>
@@ -85,7 +91,10 @@ export default function DescriptionScreen({navigation}) {
               <View style={[styles.headerCircle, { borderColor: "#000" }]}>
                 <Icon name="shopping-cart" color="#000" size={25} />
               </View>
-              <TouchableOpacity style={styles.buynow}>
+              <TouchableOpacity
+                style={styles.buynow}
+                onPress={() => navigation.navigate("CartScreen")}
+              >
                 <Text
                   style={{ fontSize: 20, fontWeight: "bold", color: "#fff" }}
                 >

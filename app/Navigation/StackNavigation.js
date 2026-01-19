@@ -4,7 +4,9 @@ import SplashScreen from "../screen/SplashScreen";
 import LoginScreen from "../screen/LoginScreen";
 import Sign_up from "../screen/Sign_up";
 import DescriptionScreen from "../screen/DescriptionScreen";
-
+import CustomerOrderScreen from "../screen/CustomerOrderScreen";
+import CartScreen from "../screen/CartScreen";
+import CheckoutScreen from "../screen/CheckoutScreen";
 
 const Stack = createStackNavigator();
 
@@ -31,13 +33,26 @@ export default StackNavigatoion = () => {
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-       <Stack.Screen
+      <Stack.Screen
         name="DescriptionScreen"
         component={DescriptionScreen}
         options={{ headerShown: false }}
       />
-      
+      <Stack.Screen
+        name="CartScreen"
+        component={CartScreen}
+        options={{ headerShown: false }}
+      />
+       <Stack.Screen
+        name="CheckoutScreen"
+        component={CheckoutScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="CustomerOrderScreen"
+        component={CustomerOrderScreen}
+        options={{ headerShown: false }}
+      />
     </Stack.Navigator>
   );
 };
-
